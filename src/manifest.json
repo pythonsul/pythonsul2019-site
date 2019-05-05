@@ -1,11 +1,11 @@
 {
-  "name": "Python Brasil 14",
-  "short_name": "PyBR 14",
+  "name": "Python Sul 2019",
+  "short_name": "PySul 19",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#102E46",
   "background_color": "#102E46",
-  "description": "The web app for Python Brazil 14.",
+  "description": "The web app for Python Sul 2019.",
   "icons": [{
     "src": "assets/icon48.png",
     "sizes": "48x48",

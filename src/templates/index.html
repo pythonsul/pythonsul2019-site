@@ -6,23 +6,17 @@ ${require('templates/partials/header.html') }
         <div class="jumbotron-container">
           <div class="jumbotron">
             <div class="jumbotron__main">
-              <img class="jumbotron__logo d-none d-md-block" height="50%" src="${require('img/Python14-NomedoEvento.svg') }" alt="Logo Python Brasil 14">
-              <img class="jumbotron__logo d-md-none" height="100%" src="${require('img/Python14-NomedoEvento.svg') }" alt="Logo Python Brasil 14">
-              <a href="https://www.facebook.com/pg/pythonbrasil/videos/?ref=page_internal" target="_blank" class="pybr-button--dark d-none d-sm-block buy-ticket">
-                <span class="d-block">Assista</span>
-                <strong class="yellow-highlight"><i class="material-icons live-icon">fiber_manual_record</i>Ao vivo</strong>
+              <img class="jumbotron__logo d-none d-md-block" height="50%" src="${require('img/PythonSul2019-NomedoEvento.svg') }" alt="Logo Python Sul 2019">
+              <img class="jumbotron__logo d-md-none" height="100%" src="${require('img/PythonSul2019-NomedoEvento.svg') }" alt="Logo Python Sul 2019">
+              <a href="#" class="pybr-button--dark d-none d-sm-block buy-ticket" style="pointer-events: none; cursor: default;">
+                <span class="d-block">INGRESSOS</span>
+                <strong class="yellow-highlight">Em breve!</strong>
               </a>
 
             </div>
             <div class="jumbotron__side">
-              <img class="d-none d-sm-block" width="auto" height="80%" src="${require('img/Mapa_RN_Logo.svg') }" alt="de 17 a 22 de Outubro de 2018 em Natal, Rio Grande do Norte">
-              <img class="d-sm-none pybr-date" src="${require('img/Mapa_RN_Logo.svg') }" alt="de 17 a 22 de Outubro de 2018 em Natal, Rio Grande do Norte">
-            </div>
-            <div class="jumbotron__action">
-              <a href="https://www.facebook.com/pg/pythonbrasil/videos/?ref=page_internal" target="_blank" class="pybr-button--dark buy-ticket">
-                <span class="d-block">Assista</span>
-                <strong class="yellow-highlight"><i class="material-icons live-icon">fiber_manual_record</i>Ao vivo</strong>
-              </a>
+              <img class="d-none d-sm-block" width="auto" height="80%" src="${require('img/PythonSul2019-JardimBotanico.svg') }" alt="de 29 a 31 de Agosto de 2019 em Curitiba, Paraná">
+              <img class="d-sm-none pybr-date" src="${require('img/PythonSul2019-JardimBotanico.svg') }" alt="de 29 a 31 de Agosto de 2019 em Curitiba, Paraná">
             </div>
           </div>
         </div>
@@ -40,15 +34,20 @@ ${require('templates/partials/header.html') }
           </header>
           <div class="about__article__body">
             <p>
-              A PythonBrasil é o maior evento sobre linguagem de programação Python do Brasil. Feito pela comunidade para a comunidade, tem o objetivo de difundir a linguagem, promover a troca de experiências e manter a comunidade crescendo igualmente em público e impacto social.
-              São 6 dias de imersão onde os participantes poderão contribuir para projetos de software livre, participar de treinamentos e adquirir novos conhecimentos com desenvolvedores renomados da comunidade.
+              A conferência Python Sul é um evento regional da linguagem de programação Python,
+              reunindo as comunidades do Rio Grande do Sul, Santa Catarina e Paraná.
+              É um evento recente, sendo que a primeira edição foi realizada em 2017, e será
+              anualmente realizada em uma cidade selecionado em um dos estados da região.
+              No ano de 2019, iremos realizar a terceira edição da Python Sul em Curitiba/PR
+              com o objetivo de promover a comunidade local e proporcionar um evento para a
+              comunidade sul do Brasil, uma vez que a Python Brasil irá ocorrer em Ribeirão
+              Preto/SP.
             </p>
-            <p>Este ano organizada pela comunidade Python de NATAL/RN com o apoio da APyB (Associação Python Brasil).</p>
-            <div class="about-button-area">
+            <!-- div class="about-button-area">
               <a href="/evento#location" class="scroll about-button pybr-button--white">
                 Conheça o local
               </a>
-            </div>
+            </div -->
           </div>
         </div>
       </div>
@@ -64,79 +63,26 @@ ${require('templates/partials/header.html') }
             </div>
           </header>
           <article class="keynote_article">
-            <div class="keynote_picture keynote_picture-1"><img src="${require('img/keynote_pic_7.jpg') }" width="100%" alt="Keynote"></div>
             <div class="keynote_content-wrapper">
-              <h2 class="keynote-title">Betina Manoel</h2>
-              <h3 class="keynote-subtitle">Desenvolvedora na ThoughtWorks</h3>
-              <div class="keynote-text">
-                <p>Betina é desenvolvedora na ThoughtWorks cursando Pós-Graduação em Data Science, apaixonada por Data, Cinema e integrante da Liga Estelar para defender a galáxia contra Xur e a Armada de Ko-Dan!</p>
-              </div>
+              <h2 class="keynote-title">Em breve!</h2>
             </div>
           </article>
-          <article class="keynote_article">
-            <div class="keynote_picture keynote_picture-1"><img src="${require('img/keynote_pic_6.jpg') }" width="100%" alt="Keynote"></div>
+          <!-- article class="keynote_article">
+            <div class="keynote_picture keynote_picture-1">
+              <img src="$ {require('img/keynote_pic_1.jpg') }" width="100%" alt="Keynote">
+            </div>
             <div class="keynote_content-wrapper">
-              <h2 class="keynote-title">Guilherme Vierno</h2>
-              <h3 class="keynote-subtitle">Full Stack Software Developer na Globo.com <a href="https://www.linkedin.com/in/vierno/" class="keynote-link" target="_blank">LinkedIn</a></h3>
+              <h2 class="keynote-title">Name</h2>
+              <h3 class="keynote-subtitle">Position</h3>
               <div class="keynote-text">
-                <p>Guilherme Vierno é desenvolvedor full stack, e vem trabalhando com Python e web por quase dez anos. Entusiasta de open-source, acredita na beleza do código e gosta de compartilhar seu trabalho com seus colegas devs. Bacharel em física por formação, caiu na TI de pára-quedas e nunca mais saiu. Mineiro de Belo Horizonte, agora mora no Rio de Janeiro e trabalha na globo.com, construindo a plataforma dos portais da Globo.</p>
+                <p>Text description</p>
               </div>
             </div>
-          </article>
-          <article class="keynote_article">
-            <div class="keynote_picture keynote_picture-1"><img src="${require('img/keynote_pic_5.png') }" width="100%" alt="Keynote"></div>
-            <div class="keynote_content-wrapper">
-              <h2 class="keynote-title">Rainer Alves</h2>
-              <h3 class="keynote-subtitle">Gerente de Production Engineering no Facebook em Londres <a href="https://www.linkedin.com/in/raineralves/" class="keynote-link" target="_blank">LinkedIn</a></h3>
-              <div class="keynote-text">
-                <p>Rainer Alves é gerente de Production Engineering no Facebook em Londres, onde é responsável por um time de engenheiros que garantem a escalabilidade e disponibilidade de diversos sistemas backend do Facebook. Rainer é usuário Linux desde 1997 e Python desde 2005, e trabalhou como sysadmin e engenheiro de sistemas em empresas brasileiras como UOL, iG, Oi e Itaú.</p>
-              </div>
-            </div>
-          </article>
-          <article class="keynote_article">
-            <div class="keynote_picture keynote_picture-1"><img src="${require('img/keynote_pic_4.png') }" width="100%" alt="Keynote"></div>
-            <div class="keynote_content-wrapper">
-              <h2 class="keynote-title">Daniela Petruzalek</h2>
-              <h3 class="keynote-subtitle">Consultora de Desenvolvimento sênior na Thoughtworks <a href="https://www.linkedin.com/in/petruzalek/" class="keynote-link" target="_blank">LinkedIn</a></h3>
-              <div class="keynote-text">
-                <p>Daniela Petruzalek é formada em Análise e Desenvolvimento de Sistemas. Ao longo de 14 anos de carreira já trabalhou com diversos tipos de sistemas, de firmware em sistemas embarcados a aplicações web, mas hoje atua principalmente com Big Data e Machine Learning. Também é reconhecida pelo Google como Google Developer Expert (GDE) em Google Cloud Platform e é uma das líderes do Women Who Go, iniciativa voltada a inclusão de mulheres na comunidade Go. Nas horas vagas gosta de praticar corrida de rua, video games e apertar os seus dois gatos pretos =^.^=</p>
-              </div>
-            </div>
-          </article>
-          <article class="keynote_article">
-            <div class="keynote_picture keynote_picture-1"><img src="${require('img/keynote_pic_3.png') }" width="100%" alt="Keynote"></div>
-            <div class="keynote_content-wrapper">
-              <h2 class="keynote-title">Painel sobre dados abertos e tecnologias cívicas</h2>
-              <h3 class="keynote-subtitle">Mediação: Mário Sérgio <a href="https://www.facebook.com/pythonbrasil/photos/a.582882565067606/2059147497441098/?type=3&theater" class="keynote-link" target="_blank">Facebook Post</a></h3>
-              <div class="keynote-text">
-                <p>Não é novidade que o tema transparência está em pauta há algum tempo. A tecnologia e a sociedade evoluíram e demandam ainda mais do poder publico que informações e dados estejam disponíveis, e não só disponíveis, mas acessíveis de uma forma que possam se tornar úteis.</p><p>Isso acontece hoje? Temos visibilidade real de como somos governados? O que acontece com o dinheiro de nossos impostos? Quais são as dificuldades encontradas nesse processo? A Python Brasil vai unir profissionais que estão trabalhando nessa área, buscando dados e transformando-os em informação diariamente e promovendo iniciativas de controle social na comunidade. Teremos a oportunidade de conhecer a realidade das pessoas que trabalham diariamente em uma missão que não e fácil.</p>
-              </div>
-            </div>
-          </article>
-          <article class="keynote_article">
-            <div class="keynote_picture keynote_picture-1"><img src="${require('img/keynote_pic_2.jpg') }" width="100%" alt="Keynote"></div>
-            <div class="keynote_content-wrapper">
-              <h2 class="keynote-title">Judite Cypreste</h2>
-              <h3 class="keynote-subtitle">Repórter no Aos Fatos <a href="https://medium.com/projeto-cora%C3%A7%C3%A3o-radiante" class="keynote-link" target="_blank">Medium</a></h3>
-              <div class="keynote-text">
-                <p>Judite Cypreste é repórter do Aos Fatos. Formada em letras pela PUC-RJ, está no 8º semestre de jornalismo na Uerj, onde também cursa pós-graduação em jornalismo cultural. Ex-trainee de jornalismo de dados da Folha de S.Paulo, realizou reportagens usando Python e raspagens de dados. É também autora do Projeto Coração Radiante, onde fez análise de sentimentos dos torcedores brasileiros durante a Copa do Mundo.</p>
-              </div>
-            </div>
-          </article>
-          <article class="keynote_article">
-            <div class="keynote_picture"><img src="${require('img/keynote_pic_1.png') }" width="100%" alt="Keynote"></div>
-            <div class="keynote_content-wrapper">
-              <h2 class="keynote-title">[Cancelado] Aisha Bello</h2>
-              <h3 class="keynote-subtitle">Virtual Systems Engineer at Cisco <a href="https://www.linkedin.com/in/aishaobello/" class="keynote-link" target="_blank">LinkedIn</a></h3>
-              <div class="keynote-text">
-                <p>Em 2015 Aisha ganhou o prêmio <i>Malcolm Tredinnick Memorial Django</i> por sua contribuição para a comunidade por meio do seu trabalho no DjangoGirls. Em 2017 ela foi honrada pela Python Software Foundation como PSF Fellow.</p><p>Além de ser vice presidente da Python Users Nigeria Group, Aisha organizou o primeiro evento de Django Girls na Nigéria e ajudou a organizar muitos workshops em Namíbia e na Nigéria. Atualmente atua como membro de uma equipe de suporte para DjangoGirls. Foi uma das fundadoras e co-organizadoras do PyLadies Nigeria, onde ensina meninas e mulheres a codar em Python. Também co-organiza e atua como presidente de conferência da PyCon Nigeria.</p><p>Aisha é uma entusiasta da comunidade Python com uma forte paixão por mudança social, educação tecnológica e empoderamento das mulheres na África. Atualmente Aisha trabalha como Engenheira de Sistemas Virtuais na Cisco Systems Nigeria, como Especialista em DataCenter para clientes corporativos.</p>
-              </div>
-            </div>
-          </article>
+          </article -->
         </div>
       </div>
     </section>
-    <section id="sponsors" class="sponsors-wrapper">
+    <!-- section id="sponsors" class="sponsors-wrapper">
       <div class="sponsors-container">
         <div class="sponsors">
           <header class="section-header-wrapper">
@@ -146,19 +92,15 @@ ${require('templates/partials/header.html') }
               </h1>
             </div>
           </header>
-          <div class="sponsors__platinum sponsor_box">
+          <h2 class="keynote-title">Em breve!</h2>
+          <!-- div class="sponsors__platinum sponsor_box">
             <h2 class="sponsor-category-title">
               PLATINA
             </h2>
             <ul class="sponsors__list">
               <li class="sponsor" id="gold">
-                <a class="partner" target="_blank" href="https://www.facebook.com/careers">
-                  <img src="${require('img/logo-facebook.svg') }" width="100%" alt="Facebook Logo">
-                </a>
-              </li>
-              <li class="sponsor">
-                <a class="partner" target="_blank" href="https://talentos.globo.com">
-                  <img src="${require('img/logo-globo.svg') }" width="100%" alt="Globo Logo">
+                <a class="partner" target="_blank" href="URL">
+                  <img src="$ {require('img/logo') }" width="100%" alt="Logo">
                 </a>
               </li>
             </ul>
@@ -169,8 +111,8 @@ ${require('templates/partials/header.html') }
             </h2>
             <ul class="sponsors__list">
               <li class="sponsor" id="silver">
-                <a class="partner" target="_blank" href="http://www.sebrae.com.br/sites/PortalSebrae">
-                  <img src="${require('img/logo-sebrae.svg') }" width="100%" alt="Sebrae Logo">
+                <a class="partner" target="_blank" href="URL">
+                  <img src="$ {require('img/logo') }" width="100%" alt="Logo">
                 </a>
               </li>
             </ul>
@@ -181,13 +123,8 @@ ${require('templates/partials/header.html') }
             </h2>
             <ul class="sponsors__list">
               <li class="sponsor">
-                <a class="partner" target="_blank" href="https://www.labcodes.com.br/">
-                  <img src="${require('img/logo-labcodes.svg') }" width="100%" alt="Sebrae Logo">
-                </a>
-              </li>
-              <li class="sponsor">
-                <a class="partner" target="_blank" href="http://mangai.com.br/">
-                  <img src="${require('img/logo-mangailabs.svg') }" width="100%" alt="MangaiLabs Logo">
+                <a class="partner" target="_blank" href="URL">
+                  <img src="$ {require('img/logo') }" width="100%" alt="Logo">
                 </a>
               </li>
             </ul>
@@ -198,11 +135,11 @@ ${require('templates/partials/header.html') }
                 <span>Quero</span> patrocinar
               </a>
             </div>
-          </div>
+          </div -- >
         </div>
       </div>
-    </section>
-    <section id="partners" class="partners-wrapper">
+    </section -->
+    <!-- section id="partners" class="partners-wrapper">
       <div class="partners-container">
         <div class="partners">
           <header class="section-header-wrapper">
@@ -213,33 +150,11 @@ ${require('templates/partials/header.html') }
             </div>
           </header>
           <div class="partner-list">
-            <a class="partner" target="_blank" href="https://cabotelecom.com.br/">
-              <img src="${require('img/logo-cabotelecom.svg') }"  alt="Cabo Logo">
-            </a>
-            <a class="partner" target="_blank" href="https://www.python.org/psf/">
-              <img src="${require('img/logo-psf.svg') }"  alt="PSF Logo">
+            <a class="partner" target="_blank" href="URL">
+              <img src="$ {require('img/logo') }"  alt="Logo">
             </a>
           </div>
         </div>
       </div>
-    </section>
-    <section id="realization" class="realization-wrapper">
-      <div class="realization-container">
-        <div class="realization">
-          <header class="section-header-wrapper">
-            <div class="section-header">
-              <h1 class="section-title--left">
-                REALIZAÇÃO
-              </h1>
-            </div>
-          </header>
-          <div class="evolux-logo">
-            <a target="_blank" href="http://evolux.net.br">
-              <img src="${require('img/logo-evolux.svg') }" width="100%" alt="Evolux Logo">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
+    </section -->
   ${require('templates/partials/footer.html') }

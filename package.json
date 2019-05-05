@@ -1,21 +1,20 @@
 {
-  "name": "python-brasil-2018",
-  "version": "1.3.0",
-  "description": "Python Brasil 2018 website",
+  "name": "python-sul-2019",
+  "version": "1.0.0",
+  "description": "Python Sul 2019 website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --inline --hot",
-    "bundle": "rm -rf dist && webpack --progress --config webpack.production.config.js",
-    "production": "npm run bundle && cp ./.gitignore dist/.gitignore && git checkout production-bundle && rm -f *.* && rm -f ./.gitignore && cp -rf dist/* . && cp -f dist/.gitignore ./.gitignore && rm -rf dist && git add . && git commit -am 'updating production bundle' && git push --all origin && git checkout master"
+    "production": "rm -rf dist && webpack --progress --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/evolux/site-python-brasil-2018.git"
+    "url": "https://github.com/pythonsul/pythonsul2019-site"
   },
   "author": "Evolux",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/evolux/site-python-brasil-2018#readme",
+  "homepage": "https://github.com/pythonsul/pythonsul2019-site#REAME.md",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@material/linear-progress": "^1.1.0",
@@ -54,7 +53,9 @@
     "showdown": "^1.9.0",
     "storm-scroll-to": "^1.0.11",
     "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.3.0",
     "tether": "^1.4.6",
+    "uglifyjs-webpack-plugin": "^2.1.3",
     "uninstall": "0.0.0",
     "webpack": "^4.0.1",
     "webpack-cli": "^3.3.2",
@@ -62,6 +63,7 @@
     "workbox-webpack-plugin": "^4.3.1"
   },
   "dependencies": {
+    "@material/animation": "^3.0.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
     "moment-timezone": "^0.5.25",

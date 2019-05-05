@@ -9,25 +9,25 @@ import 'isomorphic-fetch';
 import 'scrolling-element';
 import MobileNavManager from 'app/MobileNavManager';
 import AppRouter from 'app/AppRouter';
-import CodeOfConduct from 'app/CodeOfConduct';
+//import CodeOfConduct from 'app/CodeOfConduct';
 import Dropdown from 'app/Dropdown';
 import ScrollNavigation from 'scroll-navigation-menu';
 import swURL from 'file-loader?name=sw.js!babel-loader!service-worker';
 import KeynotesAccordion from 'app/KeynotesAccordion';
-import 'file-loader?name=manifest.json!manifest';
+//import 'file-loader?name=manifest.json!manifest';
 import 'icons/icon48.png';
 import 'icons/icon72.png';
 import 'icons/icon96.png';
 import 'icons/icon144.png';
 import 'icons/icon168.png';
 import icon192 from 'icons/icon192.png';
-import Schedule from 'app/schedule-app';
+//import Schedule from 'app/schedule-app';
 import 'icons/icon512.png';
 
 const routes = [
   '/codigo-de-conduta',
   '/quero-patrocinar',
-  '/programacao',
+  //'/programacao',
   '/patrocinadores',
   '/evento'
 ];
@@ -49,13 +49,13 @@ function onNewContentVisible(path) {
 }
 
 function init(path) {
-  if (path.startsWith('/codigo-de-conduta')) {
-    new CodeOfConduct();
-  }
+  //if (path.startsWith('/codigo-de-conduta')) {
+  //  new CodeOfConduct();
+  //}
 
-  if (path.startsWith('/programacao')) {
-    new Schedule();
-  }
+  //if (path.startsWith('/programacao')) {
+  //  new Schedule();
+  //}
 }
 
 document.addEventListener('DOMContentLoaded', () => {
