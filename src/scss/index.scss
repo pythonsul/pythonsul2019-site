@@ -128,14 +128,14 @@ p {
 }
 
 .page-content {
-  @extend .transition--opacity-translate;
-  background-repeat: no-repeat;
-  background-image: url('../img/Python14-MapaRN-cinza-30.svg');
-  background-size: 850px;
-  background-position-x: 120%;
-  background-position-x: calc(100% + 500px);
-  background-position-y: 120%;
-  background-position-y: calc(100% + 100px);
+  //@extend .transition--opacity-translate;
+  //background-repeat: no-repeat;
+  //background-image: url('../img/Python14-MapaRN-cinza-30.svg');
+  //background-size: 850px;
+  //background-position-x: 120%;
+  //background-position-x: calc(100% + 500px);
+  //background-position-y: 120%;
+  //background-position-y: calc(100% + 100px);
 }
 
 .content-wrapper > section {
