@@ -1,5 +1,8 @@
 <template>
-  <section class="info-section" :class="{'info-section--light': light}">
+  <section
+    class="info-section"
+    :class="{'info-section--light': light, 'info-section--angle': angle, 'info-section--no-angle-bot': noAngleBot}"
+    >
     <h2 class="info-section__title" :class="{'info-section__title--light': light}">
       {{title}}
     </h2>
@@ -18,6 +21,14 @@ export default {
     light: {
       type: Boolean,
       default: false
+    },
+    angle: {
+      type: Boolean,
+      default: false
+    },
+    noAngleBot: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -31,9 +42,55 @@ export default {
   flex-direction: column;
   align-items: center;
   padding-bottom: 1em;
+  position: relative;
 
   &--light{
     background-color: $clear;
+  }
+
+  &--angle-light{
+    &:after,
+    &:before {
+      background-color: $clear;
+    }
+  }
+
+  &--angle{
+    margin-top: 96px;
+    margin-bottom: 96px;
+
+    &:after,
+    &:before {
+      background-color: $golden-yellow;
+      content: '';
+      display: block;
+      height: 100px;
+      position: relative;
+    }
+
+    &:before {
+      transform-origin: left top;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      transform: skewY(-4deg);
+    }
+
+    &:after{
+      transform-origin: left top;
+      width: 100%;
+      bottom: -19px;
+      left: 0px;
+      transform: skewY(4deg);
+    }
+  }
+
+  &--no-angle-bot{
+    margin-bottom: 0;
+
+    &:after{
+      display: none !important;
+    }
   }
 
   &__text {

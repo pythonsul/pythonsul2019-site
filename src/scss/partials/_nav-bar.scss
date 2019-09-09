@@ -5,6 +5,7 @@ $logo-size: 50px;
   display: inline-block;
   position: fixed;
   width: 100%;
+  z-index: 10;
   
   &__content{
     height: 100px;
