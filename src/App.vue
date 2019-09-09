@@ -21,6 +21,8 @@ export default {
 
 <style lang="scss">
 #app {
-
+}
+.container{
+  height: 100%;
 }
 </style>
