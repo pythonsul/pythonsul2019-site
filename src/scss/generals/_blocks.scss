@@ -1,0 +1,24 @@
+.container {
+  padding-top: 100px;
+}
+
+.btn {
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease;
+
+  &--primary {
+    @include btn-theme($egiptian-blue, $clear, $golden-yellow, $python-blue);
+  }
+
+  &--secondary {
+    @include btn-theme($golden-yellow, $python-blue, $carrot-orange, $clear);
+  }
+
+  &--rdf-secondary {
+    @include btn-rdf-theme($cinnabar, $cinnabar, $carrot-orange, $clear);
+  }
+}

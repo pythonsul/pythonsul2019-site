@@ -7520,6 +7520,11 @@ normalize-range@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=
 
+normalize-scss@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/normalize-scss/-/normalize-scss-7.0.1.tgz#74485e82bb5d0526371136422a09fdb868ffc1a4"
+  integrity sha512-qj16bWnYs+9/ac29IgGjySg4R5qQTp1lXfm7ApFOZNVBYFY8RZ3f8+XQNDDLHeDtI3Ba7Jj4+LuPgz9v/fne2A==
+
 normalize-url@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-2.0.1.tgz#835a9da1551fa26f70e92329069a23aa6574d7e6"
@@ -7533,6 +7538,11 @@ normalize-url@^3.0.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
+
+normalize.css@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
+  integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
 
 npm-bundled@^1.0.1:
   version "1.0.6"

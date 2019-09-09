@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Local from './views/Local.vue'
+import KeyNotes from './views/KeyNotes.vue'
 
 Vue.use(Router)
 
@@ -10,6 +12,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/local',
+      name: 'local',
+      component: Local
+    },
+    {
+      path: '/key-notes/',
+      name: 'key-notes',
+      component: KeyNotes
     },
     {
       path: '/about',

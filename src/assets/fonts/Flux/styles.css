@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Flux';
+  src: url('Flux.eot?#iefix') format('embedded-opentype'),  url('Flux.otf')  format('opentype'),
+	     url('Flux.woff') format('woff'), url('Flux.ttf')  format('truetype'), url('Flux.svg#Flux') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

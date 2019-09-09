@@ -1,0 +1,33 @@
+<template>
+  <SectionTemplate :title="'Parceiros'" class="partners">
+    <div class="partner">
+      <img class="partner__logo" src="@/assets/unicuritiba.png" alt="">
+      <img class="partner__img" src="@/assets/unicuritiba.jpg" alt="">
+    </div>
+  </SectionTemplate>
+</template>
+
+<script>
+import SectionTemplate from '@/components/SectionTemplate.vue'
+export default {
+  name: 'EventDescription',
+  components: {
+    SectionTemplate
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.partner {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    width: 40%;
+  }
+
+  &__img {
+    width: 40%;
+  }
+}
+</style>

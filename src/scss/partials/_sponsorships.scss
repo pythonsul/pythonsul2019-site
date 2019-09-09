@@ -1,0 +1,64 @@
+.sponsorships {
+  display: flex;
+  flex-direction: row;
+}
+
+$sponsorship-logo: 100px;
+$sponsorship-border: 2px;
+.sponsorship {
+  padding: 1em;
+  margin: 0 0.5em;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+
+  &--brass {
+    border: $sponsorship-border solid $brass;
+  }
+
+  &--gold {
+    border: $sponsorship-border solid $golden-yellow;
+  }
+
+  &--silver {
+    border: $sponsorship-border solid $silver;
+  }
+
+  &__logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    width: $sponsorship-logo;
+  }
+}
+
+$medal-diameter: 100px;
+.medal {
+  align-items: center;
+  border-radius: 100px;
+  color: $clear;
+  display: flex;
+  font-size: 2em;
+  font-weight: bold;
+  height: $medal-diameter;
+  justify-content: center;
+  overflow: hidden;
+  width: $medal-diameter;
+
+  &--gold {
+    background-color: $golden-yellow;
+  }
+
+  &--silver {
+    background-color: $silver;
+  }
+
+  &--brass {
+    background-color: $brass;
+  }
+}
