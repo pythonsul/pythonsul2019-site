@@ -2,27 +2,36 @@ $img-heigth: 250px;
 
 .main-banner {
   display: flex;
-  padding: 1em 0;
   flex-flow: column;
+
+  @include breakpoint(md) {
+    padding: 96px 0 0;
+  }
 
   &__logos,
   &__propostas,
   &__actions {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+
+    @include breakpoint(sm) {
+      padding: 96px 0 0;
+    }
   }
 
   &__propostas {
     justify-content: center;
   }
 
-  &__python-sul {
-    height: $img-heigth;
-  }
-
+  &__python-sul,
   &__curitiba {
-    height: $img-heigth;
+    height: 100px;
+
+    @include breakpoint(sm) {
+      height: 250px;
+    }
   }
 
   &__actions {

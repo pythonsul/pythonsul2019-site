@@ -20,11 +20,23 @@ export default {
 <style lang="scss" scoped>
 .local {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+
+  @include breakpoint(sm) {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 
   &__logo {
-    height: 250px;
+    height: 150px;
+
+    @include breakpoint(sm) {
+      height: 250px;
+    }
   }
 
   &__map {

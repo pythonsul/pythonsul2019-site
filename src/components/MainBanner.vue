@@ -16,7 +16,3 @@ export default {
   name: 'MainBanner'
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

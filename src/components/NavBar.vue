@@ -1,9 +1,13 @@
 <template>
-  <div class="nav-bar">
-    <div class="nav-bar__content">
+  <div class="nav-bar nav-bar--mobile">
+    <div class="nav-bar__content  nav-bar__content--mobile">
       <img class="nav-bar__logo" src="@/assets/logo-python.svg" alt="">
-
-      <div id="nav">
+      <div class="nav-bar__hamburger">
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+      </div>
+      <div id="nav" class="nav-bar__links">
         <router-link class="nav-bar__link" to="/">Home</router-link>
         <router-link class="nav-bar__link" to="/local">Local</router-link>
         <router-link class="nav-bar__link" to="/key-notes/">Key Notes</router-link>

@@ -1,0 +1,36 @@
+.key-note {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(sm) {
+    flex-direction: row;
+  }
+
+  &--reverse {
+    @include breakpoint(sm) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__description {
+    padding-left: 1em;
+
+    &--reverse {
+      text-align: right;
+      padding-left: 0em;
+      padding-right: 1em;
+    }
+  }
+
+  &__img {
+    width: 220px;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+
+    @include breakpoint(sm) {
+      height: 320px;
+      width: auto;
+    }
+  }
+}

@@ -32,30 +32,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="scss">
-.key-note{
-  display: flex;
-  justify-content: space-between;
-  align-content: flex-end;
-
-  &--reverse{
-    flex-direction: row-reverse;
-  }
-
-  &__description{
-    padding-left: 1em;
-
-    &--reverse{
-      text-align: right;
-      padding-left: 0em;
-      padding-right: 1em;
-    }
-  }
-
-  &__img{
-    height: 320px;
-    border-radius: 10px;
-  }
-}
-</style>

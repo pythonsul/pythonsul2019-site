@@ -6,8 +6,8 @@ $logo-size: 50px;
   position: fixed;
   width: 100%;
   z-index: 10;
-  
-  &__content{
+
+  &__content {
     height: 100px;
     display: flex;
     margin: 0 1em;
@@ -15,7 +15,15 @@ $logo-size: 50px;
     align-items: center;
   }
 
-  &__link{
+  &__links {
+    display: none;
+
+    @include breakpoint(sm) {
+      display: flex;
+    }
+  }
+
+  &__link {
     color: $python-light-text;
     font-weight: bold;
     text-transform: uppercase;
@@ -24,9 +32,32 @@ $logo-size: 50px;
     text-decoration: none;
   }
 
-  &__logo{
+  &__logo {
     justify-self: flex-start;
     height: $logo-size;
     width: $logo-size;
+  }
+
+  &__hamburger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    z-index: 11;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+}
+
+.hamburger {
+  &__line {
+    background-color: $clear;
+    width: 100%;
+    height: 0.5em;
+    //margin-bottom: 0.5em;
   }
 }
