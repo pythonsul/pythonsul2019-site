@@ -3,10 +3,7 @@ $img-heigth: 250px;
 .main-banner {
   display: flex;
   flex-flow: column;
-
-  @include breakpoint(md) {
-    padding: 96px 0 0;
-  }
+  padding: 96px 0 0;
 
   &__logos,
   &__propostas,

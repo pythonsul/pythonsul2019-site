@@ -1,13 +1,13 @@
 #!/usr/bin/env sh
 
-USERNAME='luancomputacao'
-REPO='pythonsul-2019'
+USERNAME='pythonsul'
+REPO='pythonsul2019-site'
 
 # abort on errors
 set -e
 
 # build
-yarn build
+npm run build
 
 # navigate into the build output directory
 cd dist
