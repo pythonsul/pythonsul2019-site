@@ -11,9 +11,9 @@
         <router-link class="js-nav-bar-link nav-bar__link" to="/">Home</router-link>
         <router-link class="js-nav-bar-link nav-bar__link" to="/schedule">Programação</router-link>
         <router-link class="js-nav-bar-link nav-bar__link" to="/tutorials">Tutoriais</router-link>
-        <router-link class="js-nav-bar-link nav-bar__link" to="/key-notes/">Key Notes</router-link>
+        <router-link class="js-nav-bar-link nav-bar__link" to="/key-notes/">Keynotes</router-link>
         <router-link class="js-nav-bar-link nav-bar__link" to="/local">Local</router-link>
-        <a class="js-nav-bar-link nav-bar__link" href="https://pythonsul.org/documents/plano_de_patrocinio.pdf" target="_blank">Patrocinar /</a>
+        <a class="js-nav-bar-link nav-bar__link" href="https://pythonsul.org/documents/plano_de_patrocinio.pdf" target="_blank">Patrocinar</a>
         <a class="js-nav-bar-link nav-bar__link" href="https://pythonsul.org/documents/sponsorship_plan.pdf" target="_blank">Sponsorship</a>
       </div>
     </div>
