@@ -1,4 +1,4 @@
-$angle-margin: 9em;
+$angle-margin: 30px;
 $angle-margin-sm: 96px;
 
 .info-section {
@@ -27,6 +27,10 @@ $angle-margin-sm: 96px;
 
   &--angle {
     margin: $angle-margin 0;
+
+    @include breakpoint(sm) {
+      margin: $angle-margin-sm 0;
+    }
 
     &:after,
     &:before {
@@ -67,7 +71,7 @@ $angle-margin-sm: 96px;
       bottom: -19px;
       left: 0px;
       transform: skewY(2deg);
-      
+
       @include breakpoint(sm) {
         transform: skewY(4deg);
       }

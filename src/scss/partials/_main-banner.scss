@@ -3,7 +3,14 @@ $img-heigth: 250px;
 .main-banner {
   display: flex;
   flex-flow: column;
-  padding: 96px 0 0;
+
+  &__btn-inscricao {
+    margin-bottom: 1em;
+
+    @include breakpoint(sm) {
+      margin-bottom: 0;
+    }
+  }
 
   &__logos,
   &__propostas,
