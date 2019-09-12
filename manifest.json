@@ -1,0 +1,15 @@
+{
+  "name": "Python Sul 2019",
+  "short_name": "pythonsul2019",
+  "icons": [
+    {
+      "src": "./img/icon.png",
+      "sizes": "192x116",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4DBA87"
+}
