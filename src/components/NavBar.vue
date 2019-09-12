@@ -10,7 +10,7 @@
       <div id="nav" class="nav-bar__links" :class="{'nav-bar__links--mobile': mobile}">
         <router-link class="js-nav-bar-link nav-bar__link" to="/">Home</router-link>
         <router-link class="js-nav-bar-link nav-bar__link" to="/schedule">Programação</router-link>
-        <router-link class="js-nav-bar-link nav-bar__link" to="/tutorials">Tutoriais</router-link>
+        <a class="js-nav-bar-link nav-bar__link" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdN-CQ_EolGQj3lsagkAxvHH3Opdtp05lLCnonZYvocxaTNVQ/viewform?embedded=true">Tutoriais</a>
         <router-link class="js-nav-bar-link nav-bar__link" to="/key-notes/">Keynotes</router-link>
         <router-link class="js-nav-bar-link nav-bar__link" to="/local">Local</router-link>
         <a class="js-nav-bar-link nav-bar__link" href="https://pythonsul.org/documents/plano_de_patrocinio.pdf" target="_blank">Patrocinar</a>
