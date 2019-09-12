@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Local from './views/Local.vue'
 import KeyNotes from './views/KeyNotes.vue'
+import Schedule from './views/Schedule.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/key-notes/',
       name: 'key-notes',
       component: KeyNotes
+    },
+    {
+      path: '/schedule/',
+      name: 'schedule',
+      component: Schedule
     },
     {
       path: '/about',
