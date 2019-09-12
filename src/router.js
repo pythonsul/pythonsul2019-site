@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Local from './views/Local.vue'
 import KeyNotes from './views/KeyNotes.vue'
 import Schedule from './views/Schedule.vue'
+import Tutorials from './views/Tutorials.vue'
 
 Vue.use(Router)
 
@@ -36,6 +37,11 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    },
+    {
+      path: '/tutorials/',
+      name: 'tutorials',
+      component: Tutorials
     }
   ]
 })
