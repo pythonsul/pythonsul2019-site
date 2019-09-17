@@ -1,0 +1,83 @@
+$sponsorship-logo: 100px;
+$sponsorship-border: 2px;
+
+.sponsorships {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include breakpoint(sm) {
+    flex-wrap: nowrap;
+  }
+}
+
+.sponsorship {
+  padding: 1em;
+  margin: 1em 0.5em;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include breakpoint(sm) {
+    margin-top: 0;
+    width: 30%;
+  }
+
+  &--brass {
+    border: $sponsorship-border solid $brass;
+  }
+
+  &--gold {
+    border: $sponsorship-border solid $golden-yellow;
+  }
+
+  &--silver {
+    border: $sponsorship-border solid $silver;
+  }
+
+  &__logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    width: $sponsorship-logo;
+  }
+}
+
+$medal-diameter-mobile: 70px;
+$medal-diameter-sm: 100px;
+.medal {
+  align-items: center;
+  border-radius: 100px;
+  color: $clear;
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: $medal-diameter-mobile;
+  justify-content: center;
+  overflow: hidden;
+  width: $medal-diameter-mobile;
+  margin-bottom: 1em;
+
+  @include breakpoint(sm) {
+    font-size: 2em;
+    height: $medal-diameter-sm;
+    width: $medal-diameter-sm;
+  }
+  &--gold {
+    background-color: $golden-yellow;
+  }
+
+  &--silver {
+    background-color: $silver;
+  }
+
+  &--brass {
+    background-color: $brass;
+  }
+}

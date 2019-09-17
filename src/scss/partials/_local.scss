@@ -1,0 +1,25 @@
+.local {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+
+  @include breakpoint(sm) {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  &__logo {
+    height: 150px;
+
+    @include breakpoint(sm) {
+      height: 250px;
+    }
+  }
+
+  &__map {
+    height: 400px;
+  }
+}

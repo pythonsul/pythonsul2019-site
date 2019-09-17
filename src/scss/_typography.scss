@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Flux";
+  src: url("~@/assets/fonts/Flux.eot?#iefix") format("embedded-opentype"),
+       url("~@/assets/fonts/Flux.otf") format("opentype"),
+       url("~@/assets/fonts/Flux.woff") format("woff"),
+       url("~@/assets/fonts/Flux.ttf") format("truetype"),
+       url("~@/assets/fonts/Flux.svg#Flux") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Flux", Verdana, sans-serif;
+  font-size: 1em;
+}
