@@ -1,0 +1,45 @@
+$img-heigth: 250px;
+
+.main-banner {
+  display: flex;
+  flex-flow: column;
+
+  &__btn-inscricao {
+    margin-bottom: 1em;
+
+    @include breakpoint(sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logos,
+  &__propostas,
+  &__actions {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @include breakpoint(sm) {
+      padding: 96px 0 0;
+    }
+  }
+
+  &__propostas {
+    justify-content: center;
+  }
+
+  &__python-sul,
+  &__curitiba {
+    height: 100px;
+
+    @include breakpoint(sm) {
+      height: 250px;
+    }
+  }
+
+  &__actions {
+    padding-top: 3em;
+    padding-bottom: 1em;
+  }
+}

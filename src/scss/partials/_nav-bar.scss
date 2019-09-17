@@ -1,0 +1,92 @@
+$logo-size: 30px;
+$logo-size-sm: 50px;
+
+.nav-bar {
+  background-color: $python-blue;
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  &__content {
+    height: 50px;
+    display: flex;
+    margin: 0 1em;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint(sm) {
+      height: 100px;
+    }
+  }
+
+  &__links {
+    display: none;
+
+    &--mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      margin-top: 50px;
+      padding-bottom: 30px;
+      left: 0;
+      background-color: $python-blue;
+      width: 100%;
+    }
+
+    @include breakpoint(sm) {
+      display: flex;
+    }
+  }
+
+  &__link {
+    color: $python-light-text;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: flex;
+    margin: 1em;
+
+    @include breakpoint(sm) {
+      padding-left: 1em;
+    }
+  }
+
+  &__logo {
+    justify-self: flex-start;
+    height: $logo-size;
+    width: $logo-size;
+
+    @include breakpoint(sm) {
+      height: $logo-size-sm;
+      width: $logo-size-sm;
+    }
+  }
+
+  &__hamburger {
+    width: $logo-size;
+    height: $logo-size;
+    display: flex;
+    z-index: 11;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+}
+
+.hamburger {
+  &__line {
+    background-color: $clear;
+    width: 100%;
+    height: 0.3em;
+    //margin-bottom: 0.5em;
+  }
+}

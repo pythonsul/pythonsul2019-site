@@ -1,0 +1,20 @@
+@mixin btn-theme($bg-color, $txt-color, $h-bg-color, $h-txt-color) {
+    background-color: $bg-color;
+    color: $txt-color;
+  
+    &:hover {
+      background-color: $h-bg-color;
+      color: $h-txt-color;
+    }
+  }
+  
+  @mixin btn-rdf-theme($bg-color, $txt-color, $h-bg-color, $h-txt-color) {
+    border: 2px solid $bg-color;
+    color: $txt-color;
+  
+    &:hover {
+      border: 2px solid $h-bg-color;
+      background-color: $h-bg-color;
+      color: $h-txt-color;
+    }
+  }
